@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - ShopPWA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <span class="text-primary">Shop</span><span class="text-dark">PWA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="categories.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="deals.html">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button id="cartBtn" class="btn btn-outline-primary position-relative me-2">
+                            <i class="bi bi-cart"></i>
+                            <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+                        <button id="installBtn" class="btn btn-primary d-none d-md-inline-block">
+                            Install App
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-4">
+        <div class="container">
+            <section class="categories-section py-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Product Categories</h2>
+                    <p class="lead text-muted">Browse our wide range of products</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="electronics">
+                            <img src="electronics.jpeg" class="card-img-top" alt="Electronics" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Electronics</h3>
+                                <p class="card-text text-muted">Smartphones, laptops, and gadgets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="clothing">
+                            <img src="clothing.jpg" class="card-img-top" alt="Clothing" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Clothing</h3>
+                                <p class="card-text text-muted">Men's and women's fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="home">
+                            <img src="kitchen.jpeg" class="card-img-top" alt="Home & Kitchen" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Home & Kitchen</h3>
+                                <p class="card-text text-muted">Furniture and appliances</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="books">
+                            <img src="books.jpeg" class="card-img-top" alt="Books" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Books</h3>
+                                <p class="card-text text-muted">Fiction, non-fiction, and more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="sports">
+                            <img src="sports.jpeg" class="card-img-top" alt="Sports" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Sports</h3>
+                                <p class="card-text text-muted">Equipment and apparel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm category-card" data-category="beauty">
+                            <img src="beauty.jpeg" class="card-img-top" alt="Beauty" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Beauty</h3>
+                                <p class="card-text text-muted">Skincare and cosmetics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopPWA</h3>
+                    <p>An offline-first e-commerce progressive web application.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShopPWA. All rights reserved.</p>
+                <div class="connection-status">
+                    <span id="connectionStatus" class="badge bg-success">Online</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
