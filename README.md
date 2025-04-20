@@ -53,4 +53,4 @@ Conclusion
 A PWA for e-commerce bridges the gap between web and mobile apps, offering offline functionality, instant loading, and push notifications—all while being accessible via a simple URL. By leveraging Service Workers, Cache API, and Responsive Design, businesses can deliver an app-like shopping experience without the drawbacks of native apps. As mobile commerce continues to grow, adopting PWAs is no longer optional but a necessity for staying competitive in the digital marketplace.
 
 *OUTPUT*:
-https://github.com/yogesh26-5/-E-COMMERCE-PLATFORM-/issues/1#issue-3007009485
+![Image](https://github.com/user-attachments/assets/94dbdf1e-ac65-4e6b-9bf9-2c9e8f4c0fec)
